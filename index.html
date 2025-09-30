@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Coffee - Кофейня с душой</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="coffee-icon">☕️</span>
+                Aroma Coffee
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Главный баннер -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Наслаждайтесь искусством кофе</h1>
+            <p>Каждая чашка - это история, приготовленная с любовью</p>
+            <button class="cta-button" onclick="scrollToMenu()">Посмотреть меню</button>
+        </div>
+        <div class="hero-image">
+            <div class="coffee-cup"></div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Наша история</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Мы - семейная кофейня, которая с 2010 года дарит нашим гостям незабываемые кофейные впечатления. Наши бариста проходят обучение у лучших мастеров Италии и Колумбии.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <span class="feature-icon">🌱</span>
+                            <h3>Свежие зерна</h3>
+                            <p>Используем только свежеобжаренные зерна арабики</p>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">👨‍🍳</span>
+                            <h3>Опытные бариста</h3>
+                            <p>Наши специалисты знают секрет идеального кофе</p>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">❤️</span>
+                            <h3>С любовью</h3>
+                            <p>Каждая чашка готовится с заботой о наших гостях</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Меню -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Наше меню</h2>
+            
+            <!-- Кофе -->
+            <div class="menu-category">
+                <h3>☕️ Кофе</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image coffee-1"></div>
+                        <div class="item-info">
+                            <h4>Эспрессо</h4>
+                            <p>Классический крепкий эспрессо из зерен средней обжарки</p>
+                            <span class="price">180 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image coffee-2"></div>
+                        <div class="item-info">
+                            <h4>Капучино</h4>
+                            <p>Идеальный баланс эспрессо, молока и воздушной пенки</p>
+                            <span class="price">250 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image coffee-3"></div>
+                        <div class="item-info">
+                            <h4>Латте</h4>
+                            <p>Нежный кофе с молоком и рисунком на пенке</p><span class="price">280 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image coffee-4"></div>
+                        <div class="item-info">
+                            <h4>Раф кофе</h4>
+                            <p>Сливочный кофе с ванильным сахаром и пенкой</p>
+                            <span class="price">320 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Десерты -->
+            <div class="menu-category">
+                <h3>🍰 Десерты</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image dessert-1"></div>
+                        <div class="item-info">
+                            <h4>Тирамису</h4>
+                            <p>Классический итальянский десерт с кофе маскарпоне</p>
+                            <span class="price">350 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image dessert-2"></div>
+                        <div class="item-info">
+                            <h4>Чизкейк Нью-Йорк</h4>
+                            <p>Нежный чизкейк с ягодным соусом</p>
+                            <span class="price">320 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image dessert-3"></div>
+                        <div class="item-info">
+                            <h4>Круассан с шоколадом</h4>
+                            <p>Слоеный круассан с начинкой из бельгийского шоколада</p>
+                            <span class="price">190 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Наши контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>ул. Кофейная, 15<br>Москва, Россия</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">⏰</span>
+                        <div>
+                            <h4>Часы работы</h4>
+                            <p>Пн-Пт: 7:00 - 23:00<br>Сб-Вс: 8:00 - 00:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-image"></div>
+                    <p>🚗 Бесплатная парковка для гостей</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="coffee-icon">☕️</span>
+                    Aroma Coffee
+                </div>
+                <p>С любовью к кофе с 2010 года</p>
+                <div class="social-links">
+                    <span>📘 Instagram</span>
+                    <span>📷 Facebook</span>
+                    <span>🐦 Twitter</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
